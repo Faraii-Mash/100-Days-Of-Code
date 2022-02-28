@@ -60,3 +60,5 @@ else:
     elif user_in < comp_in:
         print('YOU LOSE!')
 
+    elif user_in == comp_in:
+        print('It is a Draw!')
