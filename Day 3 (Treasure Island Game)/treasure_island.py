@@ -1,3 +1,7 @@
+# By FB Mashiri for #100Days of Code
+# A small treasure island choice  game
+# This program uses user input to navigate through if functions in order to simulate a choice making story
+
 print('''
 b                            ,,,,                    ,d
  8b,                       ,(()(()),               ,ad8P

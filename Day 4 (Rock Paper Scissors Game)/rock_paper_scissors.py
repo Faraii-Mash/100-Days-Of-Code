@@ -26,3 +26,4 @@ scissors = '''
 '''
 
 #Rock Paper Scissors Program
+print('Weclome to the Rock Paper Scissors application')
