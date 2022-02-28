@@ -30,7 +30,7 @@ scissors = '''
 ---.__(___)
 '''
 
-#Rock Paper Scissors Program
+#  Rock Paper Scissors Program
 print('Welcome to the Rock Paper Scissors application')
 choice_pics = [rock, paper, scissors]
 
@@ -45,4 +45,18 @@ else:
     comp_in = random.randint(0, 2)
     print('The computer chose: ')
     print(choice_pics[comp_in])
+
+    #
+    if user_in == 0 and comp_in == 2:
+        print('YOU WIN!')
+
+    #
+    elif user_in == 2 and comp_in == 0:
+        print('YOU LOSE!')
+
+    elif user_in > comp_in:
+        print('YOU WIN!')
+
+    elif user_in < comp_in:
+        print('YOU LOSE!')
 
