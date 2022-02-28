@@ -9,4 +9,4 @@ city_name = input('Please enter the name of the city you were born in below: \n'
 # ask user for pet name and save in pet_name
 pet_name = input('Please enter the name of a childhood pet you owned: \n')
 # join sting using concatenation 
-print('Your new band name maybe: ' + city_name + " " + pet_name )
+print('Your new band name maybe: ' + city_name + " " + pet_name)
