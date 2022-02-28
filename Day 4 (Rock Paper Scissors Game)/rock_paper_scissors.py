@@ -46,11 +46,10 @@ else:
     print('The computer chose: ')
     print(choice_pics[comp_in])
 
-    #
+    #  User rock over comp Scissors
     if user_in == 0 and comp_in == 2:
         print('YOU WIN!')
-
-    #
+    #  Comp Scissors over User rock
     elif user_in == 2 and comp_in == 0:
         print('YOU LOSE!')
 
