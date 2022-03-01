@@ -10,10 +10,10 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-print("Welcome to the Python Password Generator.")
-num_letters_in = int(input("How many letters would you like in your password?\n"))
-num_symbols_in = int(input(f"How many symbols would you like?\n"))
-num_numbers_in = int(input(f"How many numbers would you like?\n"))
+print('Welcome to the Python Password Generator.')
+num_letters_in = int(input('How many letters would you like in your password?\n'))
+num_symbols_in = int(input(f'How many symbols would you like?\n'))
+num_numbers_in = int(input(f'How many numbers would you like?\n'))
 
 # Generator
 password_list = []
@@ -27,12 +27,14 @@ for char in range(1, num_symbols_in + 1):
 for char in range(1, num_numbers_in + 1):
     password_list += random.choice(numbers)
 
+#  Show compiled password
 print(password_list)
+# Shuffle and print password generated
 random.shuffle(password_list)
 print(password_list)
 
-password = ""
+password = ''
 for char in password_list:
     password += char
 
-print(f"Your password is: {password}")
+print(f'Your password is: {password}')
