@@ -14,9 +14,9 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 #  Print program start and ask user for inputs
 print('Welcome to the Python Password Generator.')
-num_letters_in = int(input('How many letters would you like in your password?\n'))
-num_symbols_in = int(input(f'How many symbols would you like?\n'))
-num_numbers_in = int(input(f'How many numbers would you like?\n'))
+num_letters_in = int(input('Please enter the number of letters would you like in your password?\n'))
+num_symbols_in = int(input(f'Please enter the number of symbols would you like?\n'))
+num_numbers_in = int(input(f'Please enter the number of numbers would you like?\n'))
 
 # Start Generator and build into a List
 password_list = []
@@ -43,4 +43,3 @@ for char in password_list:
     password += char
 
 print(f'Your password is: {password}')
-
