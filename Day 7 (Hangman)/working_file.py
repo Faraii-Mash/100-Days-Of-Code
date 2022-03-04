@@ -1,10 +1,32 @@
-#Step 1
+# By FB Mashiri for #100Days of Code
+# This Program is a hangman game
 
-word_list = ["aardvark", "baboon", "camel"]
+import random
+from hang_man_art import stages, logo
+from hangman_words import word_list
+from replit import clear
 
-#TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
+print(logo)
+game_is_finished = False
+lives = len(stages) - 1
 
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
 
-#TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
+display = []
+for _ in range(word_length):
+    display += "_"
 
-#TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+while not game_is_finished:
+    guess = input("Guess a letter: ").lower()
+
+    #Use the clear() function imported from replit to clear the output between guesses.
+    clear()
+
+    if guess in display:
+        print(f"You've already guessed {guess}")
+
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
