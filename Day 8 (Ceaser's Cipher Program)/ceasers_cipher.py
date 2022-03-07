@@ -11,7 +11,7 @@ def greet_user(user_name):
     print('Please select an option below to work on a cipher:')
 
 
-def cipher_option(user_option):
+def cipher_option(user_option, user_word, shift_num):
     if user_option == 'decrypt':
         print(f'You have chosen to {user_option}')
         decryption_tool(user_word, shift_num)
@@ -24,7 +24,6 @@ def cipher_option(user_option):
         print(f'You have chosen to {user_option}')
         print('You have entered an invalid option. Please try again')
 
-
 def encryption_tool(user_word, shift_num):
     print(user_word)
     print(shift_num)
@@ -35,6 +34,7 @@ def encryption_tool(user_word, shift_num):
         letter_pos_aft = letter_pos_bef + shift_num
         encrypted_letter = alphabet[letter_pos_aft]
         encrypted_text += encrypted_letter
+
     print(f'The encrypted word is {encrypted_text}')
 
 def decryption_tool(word, shift_num):
@@ -47,5 +47,5 @@ greet_user(user_name)
 user_option = input('Would you like to encrypt or decrypt\n')
 
 user_word = input('Please insert your word to decipher here:\n')
-shift_num = input('How many shifts would you like to encode by:\n')
+shift_num = int(input('How many shifts would you like to encode by:\n'))
 cipher_option(user_option)
