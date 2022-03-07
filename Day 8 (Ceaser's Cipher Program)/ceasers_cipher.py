@@ -8,5 +8,9 @@ def greet_user(user_name):
     print('Please select an option below to work on a cipher:')
 
 
-user_name = input('Greetings, What is your name')
+def user_option(option):
+    print('print')
+
+
+user_name = input('Greetings, What is your name\n')
 greet_user(user_name)
