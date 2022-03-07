@@ -20,12 +20,14 @@ def cipher_option(user_option):
         print('You have entered an invalid option. Please try again')
 
 
-def encryption_tool(word):
+def encryption_tool(word,shift_num):
     print(word)
+    print(shift_num)
 
 
-def decryption_tool(word):
+def decryption_tool(word,shift_num):
     print(word)
+    print(shift_num)
 
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
@@ -35,3 +37,5 @@ user_name = input('Greetings, What is your name\n')
 greet_user(user_name)
 user_option = input('Would you like to encrypt or decrypt\n')
 cipher_option(user_option)
+shift_num = input('How many shifts would you like to encode by:\n')
+
