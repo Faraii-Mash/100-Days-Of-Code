@@ -20,11 +20,18 @@ def cipher_option(user_option):
         print('You have entered an invalid option. Please try again')
 
 
+def encryption_tool(word):
+    print(word)
+
+
+def decryption_tool(word):
+    print(word)
+
+
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'w', 'x', 'y', 'z']
+
 user_name = input('Greetings, What is your name\n')
-
 greet_user(user_name)
-
 user_option = input('Would you like to encrypt or decrypt\n')
-
 cipher_option(user_option)
-
