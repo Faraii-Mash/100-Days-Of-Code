@@ -8,9 +8,21 @@ def greet_user(user_name):
     print('Please select an option below to work on a cipher:')
 
 
-def user_option(option):
+def cipher_option(option):
     print('print')
-
 
 user_name = input('Greetings, What is your name\n')
 greet_user(user_name)
+
+
+option = input('Would you like to encrypt or decrypt\n')
+
+
+if user_option == 'decrypt':
+    print('decrypt')
+
+elif user_option == 'encrypt':
+    print('encrypt')
+
+else:
+    print('You have entered an invalid option. Please try again')
