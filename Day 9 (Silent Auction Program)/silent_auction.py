@@ -2,28 +2,23 @@
 # By FB Mashiri for #100Days of Code
 # This Program is a silent option
 from os import system
+from art import logo
 #  defining a function to clear the screen
 
 def clear_screen():
     _ = system('clear')
 
+bid_dict ={}
+bidding_active = True
+#  Start program
+print(logo)
 
-new_dictionary = {"Day": "Monday",
-                  "Week": "Week 2",
-                  "Year": "2022"}
+while bidding_active:
+    print('Welcome to the silent auction')
+    name = input('Please enter your name below\n')
+    user_bid = input('Please enter the Bid amount below: \n$')
 
-print(f'This is printing out of a dictionary'
-      f'The Day is  {new_dictionary["Day"]}\n'
-      f'In the {new_dictionary["Week"]}\n'
-      f'This is the year {new_dictionary["Year"]}\n')
+    prog_continue = input("Are there any other bidders ")
 
-new_dictionary["Week"] = "Week 4 is the new entry"
-#create a new dictionary
-dict1 = {}
+bid_dict[name] = user_bid
 
-print(new_dictionary)
-print(dict1)
-
-for things in new_dictionary:
-    print(things)
-    print(new_dictionary[things])
