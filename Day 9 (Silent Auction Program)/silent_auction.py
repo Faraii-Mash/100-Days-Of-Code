@@ -1,3 +1,8 @@
+#
+# By FB Mashiri for #100Days of Code
+# This Program is a silent option
+
+#  defining a function to clear the screen
 new_dictionary = {"Day": "Monday",
                   "Week": "Week 2",
                   "Year": "2022"}
