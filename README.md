@@ -12,6 +12,8 @@ _Below is an updated List of the directories and the projects they contain:_
 5. Day 5: Password Generator (Py)
 6. Day 6: Escaping the Maze (Py)
 7. Day 7: Hangman Game (Py)
+8. Day 8: Ceaser's Cipher Program (Py)
+9. Day 9: Silent Auction Program (Py)
 
 > For more information visit [www.faraii.me](https://www.faraii.me)
 > 
